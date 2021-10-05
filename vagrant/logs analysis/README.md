@@ -23,3 +23,11 @@ Here are the questions the reporting tool should answer. The example answers giv
 
 3. On which days did more than 1% of requests lead to errors? The log table includes a column status that indicates the HTTP status code that the news site sent to the user's browser.
 
+
+## Download the data
+
+Next, download the data [here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip). You will need to unzip this file after downloading it. The file inside is called newsdata.sql. Put this file into the vagrant directory, which is shared with your virtual machine.
+
+To build the reporting tool, you'll need to load the site's data into your local database. Review how to use the psql command in this lesson: (FSND version)
+
+To load the data, cd into the vagrant directory and use the command psql -d news -f newsdata.sql. 
